@@ -1,0 +1,36 @@
+### GET MODEL
+OPTIONS http://127.0.0.1:3030/users/
+
+### LIST
+GET http://127.0.0.1:3030/users/
+
+### POST
+POST http://127.0.0.1:3030/users/ 
+Content-Type: application/json
+
+{ 
+  "name": "Placeholder",
+  "birth": "2023-12-20T12:00:00Z",
+  "address": "123, placeholder address, and city"
+}
+
+### DROP
+DELETE http://127.0.0.1:3030/users/
+
+### RETRIEVE
+GET http://127.0.0.1:3030/users/1
+
+### UPDATE
+PUT http://127.0.0.1:3030/users/1
+Content-Type: application/json
+
+{ 
+  "name": "Placeholder updated",
+  "birth": "2013-12-20T12:00:00Z",
+  "address": "321, new placeholder address, and city",
+  "description": "now with description!"
+}
+
+### DELETE
+DELETE http://127.0.0.1:3030/users/1
+
